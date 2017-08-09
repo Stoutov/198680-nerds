@@ -1,0 +1,54 @@
+
+/*about col2*/
+
+/*.f {
+    display: flex;
+    width: 360px;
+}
+
+.f--title {
+    font-size: 45px;
+    font-weight: 700;
+
+}
+
+.f1,
+.f2,
+.f3 {
+    margin-right: 25px;
+    }*/
+
+/*.f {
+    background-color: #aaaccd;
+}
+
+.partners--list--item {
+    list-style: none;
+   border-left: 2px solid #ccc;
+   border-bottom-style: none;
+   border-top-style: none;
+   border-right-style: none;
+   padding-left: 20px;
+   line-height: 100px;
+}
+
+.partners {
+    background-color: #aaaccd;
+}
+*/
+
+.partners--logo {
+      height: 68px;
+    width: 200px;
+/*    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;*/
+  background-image: url("C:\Users\user3\Desktop\198680-nerds\img\academy_logo.png") ;
+      list-style: none;
+   border-left: 2px solid #d1d1;
+   border-bottom-style: none;
+   border-top-style: none;
+   border-right-style: none;
+   padding-left: 20px;
+   line-height: 100px;
+}
