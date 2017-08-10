@@ -16,39 +16,41 @@
 .f2,
 .f3 {
     margin-right: 25px;
-    }*/
+    }
 
-/*.f {
-    background-color: #aaaccd;
-}
 
-.partners--list--item {
-    list-style: none;
-   border-left: 2px solid #ccc;
-   border-bottom-style: none;
-   border-top-style: none;
-   border-right-style: none;
-   padding-left: 20px;
-   line-height: 100px;
-}
+    */
 
-.partners {
-    background-color: #aaaccd;
-}
-*/
+    body {
+      width: 1440px;
+    }
 
-.partners--logo {
-      height: 68px;
-    width: 200px;
-/*    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;*/
-  background-image: url("C:\Users\user3\Desktop\198680-nerds\img\academy_logo.png") ;
+    .about__left li {
       list-style: none;
-   border-left: 2px solid #d1d1;
-   border-bottom-style: none;
-   border-top-style: none;
-   border-right-style: none;
-   padding-left: 20px;
-   line-height: 100px;
-}
+  
+
+    }
+
+    .style--imge {
+      display: inline-flex;
+      background-color: #cccccc;
+
+    }
+
+    li.partners__item {
+      margin-right: 25px;
+      margin-top: 64px;
+      margin-bottom: 52px;
+      padding-left: 25px;
+      list-style: none;
+      background-image: url("../img/lb.png");
+      background-repeat: no-repeat;
+      background-position: 0 10px;
+
+    }
+
+
+    .about-item .about-item--red {
+      color: red;
+    margin-right: 20px;
+    }
