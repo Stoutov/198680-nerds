@@ -78,7 +78,7 @@
 }*/
 
 
-html,
+/*html,
 body {
     margin: 0;
     padding: 0;
@@ -157,3 +157,5 @@ body {
 #btn-3:checked ~ .slider-inner .slider-slides { 
     transform: translate(-900px)
 }
+*/
+
