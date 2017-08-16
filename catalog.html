@@ -6,9 +6,12 @@
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+
+	<!-- Header -->
+
 	<header class="header-wrapper">
 		<div class="header__logo">
-			<img src="#" alt="Логотип Нёрдс" width="165" height="65">
+			<img src="img/nerds-logo.svg" alt="Логотип Нёрдс" width="165" height="65">
 		</div>
 		
 		<nav class="header-nav">
@@ -17,11 +20,14 @@
 				<li class="header-nav__item"><a href="#">Клиенты</a></li>
 				<li class="header-nav__item"><a href="#">Магазин</a></li>
 				<li class="header-nav__item"><a href="#">Контакты</a></li>
-				<li class="header-nav__item cart"><a href="#">Корзина</a></li>
+				<li class="header-nav__item header-nav__item--cart"><a href="#">Корзина</a></li>
 			</ul>
 		</nav>
 		<h1 class="header__title">Магазин готовых шаблонов</h1>
 	</header>
+
+	<!-- /Header -->
+	<!-- Main -->
 
 	<main class="main-wrapper">
 		<div class="left__col">
@@ -29,21 +35,11 @@
 				<h2 class="visually-hidden">Фильтр готовых шаблонов</h2>
 				<form action="get" class="filter" action="index.html">
 
-
-
-
 					<fieldset class="filter__range">
 						<legend>Стоимость:</legend>
 						<label for="range__cost"></label>
 						<input type="range" min="0" max="15 000" step="500" name="cost-range">
 					</fieldset>
-
-
-
-
-
-
-
 
 					<fieldset>
 						<legend>Сетка:</legend>
@@ -79,7 +75,6 @@
 					<a href="" class="sort__direction-down">˅</a>
 				</div>
 			</div>
-
 
 			<div class="catalog__item">
 				<a href="" class="catalog__img"><img src="img/img-sedona.jpg" alt="Седона"></a>
@@ -140,7 +135,6 @@
 									<button class="catalog__btn">9 900 руб.</button>
 								</div>
 							</div>
-
 						</div>
 
 						<div class="pagination">
@@ -151,73 +145,39 @@
 							<a href="#" class="next">Следующая</a>
 						</div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-					</main>
-					<section class="map">
-						<h2 class="visually-hidden">Как добраться и контакты</h2>
-						<section class="contacts">
-							<b>NЁRDS DESIGN STUDIO</b>
-							<p class="contants_location">
-								191186, Санкт-Петербург, <br>
-								ул. Б. Конюшенная, д. 19/8 <br>
-								<br>
-								тел. +7 (812) 275-75-75 <br>
-								<button class="contancts__btn contacts__btn--red">Напишите нам</button>
-							</p>
+						<section class="map">
+							<h2 class="visually-hidden">Как добраться и контакты</h2>
+							<div class="contacts">
+								<b>NЁRDS DESIGN STUDIO</b>
+								<p class="contants_location">
+									191186, Санкт-Петербург, <br>
+									ул. Б. Конюшенная, д. 19/8 <br>
+									<br>
+									тел. +7 (812) 275-75-75 <br>
+									<button class="contancts__btn contacts__btn--red">Напишите нам</button>
+								</p>
+							</div>
 						</section>
-					</section>
+					</main>
 
-				</main>
+					<!-- /Main -->
+					<!-- Footer -->
 
-				<!-- /Main -->
+					<footer>
+						<section class="footer-social">
+							<ul class="social__btn">
+								<li class="social__btn social__btn--vk"><a href="#"></a>Vkontakte</li>
+								<li class="social__btn social__btn--fb"><a href="#"></a>Facebook</li>
+								<li class="social__btn social__btn--in"><a href="#"></a>Instagram</li>
+							</ul>
+						</section>
+						<div class="footer-motion">
+							<b>Давайте дружить, это выгодно!</b>
+							<p>Скидка 10% для друзей из социальных сетей.</p>
+						</div>
+					</footer>
 
-				<footer>
-					<section class="footer-social">
-						<ul class="social__btn">
-							<li class="social__btn social__btn--vk"><a href="#"></a>Vkontakte</li>
-							<li class="social__btn social__btn--fb"><a href="#"></a>Facebook</li>
-							<li class="social__btn social__btn--in"><a href="#"></a>Instagram</li>
-						</ul>
-					</section>
-					<div class="footer-motion">
-						<b>Давайте дружить, это выгодно!</b>
-						<p>Скидка 10% для друзей из социальных сетей.</p>
-					</div>
-				</footer>
+					<!-- /Footer -->
 
-
-			</body>
-			</html>
+				</body>
+				</html>
