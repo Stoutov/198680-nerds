@@ -152,7 +152,7 @@ body {
 */
 
 
-/*body {
+body {
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
   line-height: 24px;
@@ -223,8 +223,34 @@ body {
 }
 
 .footer__bold {
-font-size: 36px;
-font-weight: 700;
-line-height: 36px;
-color: #000000;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 36px;
+  color: #000000;
+}
+
+/*.filter__col{
+  display: flex;
+  flex-direction: row;
+}
+*/
+
+
+/*.contacts__btn {
+  border-radius: 5px 5px 5px 5px;
+  padding: 15px 45px 15px 45px;
+  width: 220px;
+  height: 50px;;
+  border: none;
+  background-color: #fb565a;
+}
+
+.contacts__btn--red {
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18px;
 }*/
