@@ -172,14 +172,12 @@ body {
   font-size: 55px;
   font-weight: 500;
   line-height: 55px;
-  color: #000000;
 }
 
 .service__title {
   font-size: 24px;
   line-height: 30px;
   font-weight: 700;
-  color: #000000;
   text-transform: uppercase;
 }
 
@@ -187,14 +185,12 @@ body {
   font-size: 45px;
   line-height: 45px;
   font-weight: 700;
-  color: #000000;
 }
 
 .about__bold {
   font-size: 16px;
   line-height: 24px;
   font-weight: 700;
-  color: #000000;
   text-transform: uppercase;
 }
 
@@ -202,7 +198,6 @@ body {
   font-size: 45px;
   line-height: 45px;
   font-weight: 700;
-  color: #000000;
 }
 
 .contacts__title {
@@ -210,7 +205,6 @@ body {
   font-size: 18px;
   font-weight: 700;
   line-height: 30px;
-  color: #000000;
   text-transform: uppercase;
 }
 
@@ -218,7 +212,6 @@ body {
   font-size: 18px;
   font-weight: 700;
   line-height: 30px;
-  color: #000000;
   text-transform: uppercase;
 }
 
@@ -226,7 +219,6 @@ body {
   font-size: 36px;
   font-weight: 700;
   line-height: 36px;
-  color: #000000;
 }
 
 /*.filter__col{
