@@ -58,7 +58,7 @@ body {
 }
 
 
-.sort--bold {
+.sort__title--bold {
   font-size: 18px;
   font-weight: bold;
   text-transform: uppercase;

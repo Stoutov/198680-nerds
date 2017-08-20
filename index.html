@@ -22,40 +22,40 @@
       </ul>
       <div class="nav__cart" ><a href="#">Корзина</a></div>
     </nav>
+    <div class="slider">
+      <ul class="slider__controls">
+        <li><input type="radio" id="slider-btn1" name="toggle" checked></li>
+        <li><input type="radio" id="slider-btn2" name="toggle"></li>
+        <li><input type="radio" id="slider-btn3" name="toggle"></li>
+      </ul>
+      <div class="slider__buttons">
+        <label for="slider-btn1"></label>
+        <label for="slider-btn2"></label>Слайд
+        <label for="slider-btn3"></label>
+      </div>
+
+      <div class="slider__slide slider__slide--1">
+        <h3 class="slider__title">Долго, дорого, скрупулезно.</h3>
+        <p class="slider__desc">Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
+        <a class="slider__btn slider__btn--red" href="#">Узнать больше</a>
+        <img src="img/slide1.png" alt="Слайд">
+      </div>
+
+      <div class="visually-hidden slider__slide slider__slide--2">
+        <h3 class="slider__title">Любим математику как никто другой.</h3>
+        <p class="slider__desc">Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
+        <a class="slider__btn slider__btn--red" href="#">Узнать больше</a>
+        <img src="img/slide2.png" alt="Слайд">
+      </div>
+
+      <div class="visually-hidden slider__slide slider__slide--3">
+        <h3 class="slider__title">Только ночь, только хардкор</h3>
+        <p class="slider__desc">Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
+        <a class="slider__btn slider__btn--red" href="#">Узнать больше</a>
+        <img src="img/slide3.png" alt="Слайд">
+      </div>
+    </div>
   </header>
-  <div class="slider">
-  <ul class="slider__controls">
-    <li><input type="radio" id="slider-btn1" name="toggle" checked></li>
-    <li><input type="radio" id="slider-btn2" name="toggle"></li>
-    <li><input type="radio" id="slider-btn3" name="toggle"></li>
-    </ul>
-    <div class="slider__buttons">
-      <label for="slider-btn1"></label>
-      <label for="slider-btn2"></label>Слайд
-      <label for="slider-btn3"></label>
-    </div>
-
-    <div class="slider__slide slider__slide--1">
-      <h3 class="slider__title">Долго, дорого, скрупулезно.</h3>
-      <p class="slider__desc">Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
-      <a class="slider__btn slider__btn--red" href="#">Узнать больше</a>
-      <img src="img/slide1.png" alt="Слайд">
-    </div>
-
-    <div class="visually-hidden slider__slide slider__slide--2">
-      <h3 class="slider__title">Любим математику как никто другой.</h3>
-      <p class="slider__desc">Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
-      <a class="slider__btn slider__btn--red" href="#">Узнать больше</a>
-      <img src="img/slide2.png" alt="Слайд">
-    </div>
-
-    <div class="visually-hidden slider__slide slider__slide--3">
-      <h3 class="slider__title">Только ночь, только хардкор</h3>
-      <p class="slider__desc">Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
-      <a class="slider__btn slider__btn--red" href="#">Узнать больше</a>
-      <img src="img/slide3.png" alt="Слайд">
-    </div>
-  </div>
 
   <main class="main">
     <section class="service">
@@ -84,7 +84,7 @@
 
     <section class="about">
       <h2 class="visually-hidden">О нас</h2>
-      <div class="about__wrapper--left">
+      <div class="about__wrapper about__wrapper--left">
         <h3 class="about__title">Мы — маленькая, но гордая
           дизайн-студия из Краснодара.</h3>
           <div class="about__desc"><p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет
@@ -98,7 +98,7 @@
           </ul>
         </div>
 
-        <div class="about__wrapper--right">
+        <div class="about__wrapper about__wrapper--right">
           <div class="about__image">
             <img src="img/about_illustration.jpg" alt="Иллюстрация к веб-студии Нёрдс">
           </div>
@@ -123,55 +123,54 @@
 
       <section class="partners">
         <h2 class="visually-hidden">Наши партнёры</h2>
-        <div class="partners__item--image"><a href="#"><img src="img/academy_logo.png" alt="HTML Академия" width="199" height="68"></a>
+        <div class="partners__item partners__item--image"><a href="#"><img src="img/academy_logo.png" alt="HTML Академия" width="199" height="68"></a>
         </div>
-        <div class="partners__item--image"><a href="#"><img src="img/barber_logo.png" alt="Барбершоп Бородинский" width="209" height="90"></a>
+        <div class="partners__item partners__item--image"><a href="#"><img src="img/barber_logo.png" alt="Барбершоп Бородинский" width="209" height="90"></a>
         </div>
-        <div class="partners__item--image"><a href="#"><img src="img/pink_logo.png" alt="Пинк" width="185" height="52"></a>
+        <div class="partners__item partners__item--image"><a href="#"><img src="img/pink_logo.png" alt="Пинк" width="185" height="52"></a>
         </div>
-        <div class="partners__item--image"><a href="#"><img src="img/mishka_logo.png" alt="Мишка" width="173" height="84"></a>
+        <div class="partners__item partners__item--image"><a href="#"><img src="img/mishka_logo.png" alt="Мишка" width="173" height="84"></a>
         </div>
       </section>
 
       <section class="contacts">
         <h2 class="visually-hidden">Контакты</h2>
-        <div class="contacts--map">
+        <img src="img/map.jpg" alt="">
+        <div class="contants__location">
           <span class="contacts__title">Nёrds design studio</span>
-          <div class="contants__location">
-            <p>191186, Санкт-Петербург, 
-              ул. Б. Конюшенная, д. 19/8</p> 
+          <p>191186, Санкт-Петербург, 
+            ул. Б. Конюшенная, д. 19/8</p> 
 
-              <a href="tel:+78122757575">тел. +7 (812) 275-75-75</a>
-              <a class="contacts__btn contacts__btn--red" href="#">Напишите нам</a>
-            </div>
+            <a href="tel:+78122757575">тел. +7 (812) 275-75-75</a>
+            <a class="contacts__btn contacts__btn--red" href="#">Напишите нам</a>
           </div>
         </section>
-
-        <form action="#" method="post" class="write-us">
-          <fieldset class="write-us__name">
-            <legend class="write-us__title">Напишите нам</legend>
-            <label for="name">Ваше имя:<input type="text" id="name" name="name" placeholder="Представьтесь, пожалуйста" required>
-            </label>
-          </fieldset>
-          <fieldset class="write-us__email">
-            <label for="email">Ваш e-mail:<input type="email" id="email" name="email" placeholder="Для отправки ответа" required>
-            </label>
-          </fieldset>
-          <fieldset class="write-us__message">
-            <label for="message">Текст письма:</label>
-            <textarea id="message" name="message" placeholder="В свободной форме" required></textarea>
-          </fieldset>
-          <button type="submit" class="write-us__btn write-us__btn--submit">Отправить</button>
-          <button type="reset" class="write-us__btn write-us__btn--close">Закрыть</button>
-        </form>
-
+        <div class="modal-write">
+          <form action="#" method="post" class="modal-write__form">
+            <fieldset class="modal-write__name">
+              <legend class="modal-write__title">Напишите нам</legend>
+              <label for="name">Ваше имя:<input type="text" id="name" name="name" placeholder="Представьтесь, пожалуйста" required>
+              </label>
+            </fieldset>
+            <fieldset class="modal-write__email">
+              <label for="email">Ваш e-mail:<input type="email" id="email" name="email" placeholder="Для отправки ответа" required>
+              </label>
+            </fieldset>
+            <fieldset class="modal-write__message">
+              <label for="message">Текст письма:</label>
+              <textarea id="message" name="message" placeholder="В свободной форме" required></textarea>
+            </fieldset>
+            <button type="submit" class="modal-write__btn modal-write__btn--submit">Отправить</button>
+            <button type="reset" class="modal-write__btn modal-write__btn--close">Закрыть</button>
+          </form>
+        </div>
       </main>
-      <footer>
-        <div class="footer-social">
-          <ul class="social__btn">
-            <li class="social__btn social__btn--vk"><a href="https://vk.com/htmlacademy">Vkontakte</a></li>
-            <li class="social__btn social__btn--fb"><a href="https://www.facebook.com/htmlacademy">Facebook</a></li>
-            <li class="social__btn social__btn--in"><a href="https://www.instagram.com/htmlacademy/">Instagram</a></li>
+      <footer class="footer">
+        <div class="footer__social">
+          <ul class="footer__social-list">
+            <li class="footer__social-item footer__social-item--vk"><a href="https://vk.com/htmlacademy">Vkontakte</a></li>
+            <li class="footer__social-item footer__social-item--fb"><a href="https://www.facebook.com/htmlacademy">Facebook</a></li>
+            <li class="footer__social-item footer__social-item--in"><a href="https://www.instagram.com/htmlacademy/">Instagram</a></li>
           </ul>
         </div>
         <div class="footer__motion">
