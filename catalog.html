@@ -25,19 +25,19 @@
 		</header>
 
 		<main class="main">
-			<div class="main__filter">
+			<div class="filter">
 				<span class="visually-hidden">Фильтр готовых шаблонов:</span>
 				<form class="filter__form" action="get">
 
 					<fieldset class="filter__range">
-						<legend>Стоимость:</legend>
+						<legend class="filter__title">Стоимость:</legend>
 						<label for="cost-range">
 							<input type="range" min="0" max="15000" step="500" id="cost-range">
 						</label>
 					</fieldset>
 
 					<fieldset class="filter__radio">
-						<legend>Сетка:</legend>
+						<legend class="filter__title">Сетка:</legend>
 						<label for="adaptive" class="filter__option">
 							<input class="visually-hidden form__input form__input--radio" id="adaptive" type="radio"  name="grid-type" checked>Адаптивная
 						</label>
@@ -50,7 +50,7 @@
 					</fieldset>
 
 					<fieldset class="filter__checkbox">
-						<legend>Особенности:</legend>
+						<legend class="filter__title">Особенности:</legend>
 						<label for="slider" class="filter__option">
 							<input class="visually-hidden form__input form__input--checkbox"  id="slider" type="checkbox" name="filter__sider" checked>Слайдер
 						</label>
