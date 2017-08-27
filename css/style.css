@@ -242,7 +242,7 @@ color: #fff;
   border-left: none;
   border-right: none;
   margin-bottom: 76px;
- /* padding-top: 40px;*/
+  /* padding-top: 40px;*/
 }
 
 .about__title {
@@ -306,8 +306,8 @@ color: #fff;
 }
 
 fieldset {
-display: flex;
-border: none;
+  display: flex;
+  border: none;
 }
 
 .filter__form {
@@ -326,15 +326,22 @@ border: none;
 }
 
 .form__btn {
-font-size: 16px;
-font-weight: 500;
-line-height: 18px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18px;
   color: #000;
   border: none;
- background-color: #eeeeee;
- text-transform: uppercase;
+  background-color: #eeeeee;
+  text-transform: uppercase;
+}
+.form__btn:hover {
+  background-color: #dfdfdf;
 }
 
+.form__btn:active {
+  box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.1);
+  background-color: #d5d5d5;
+}
 .features {
   display: flex;
   width: 360px;
@@ -382,10 +389,45 @@ line-height: 18px;
 
 }
 
+.sort {
+  display: flex;
+
+}
+.catalog-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+}
+
 .catalog__title {
   font-size: 18px;
   font-weight: 700;
 }
+.catalog__item {
+  width: 360px;
+  margin-right: 40px;
+  margin-bottom: 30px;
+}
+
+
+.catalog__btn {
+  color: #fff;
+  border: none;
+  background-color: #fb565a;
+}
+
+
+.catalog__btn:hover {
+  background-color: #e74246;
+}
+
+.catalog__btn:active {
+  box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.1);
+  background-color:  #d7373b;
+  color: #e47175;
+}
+
 
 .contacts__title {
   font-size: 18px;
