@@ -285,7 +285,7 @@ color: #fff;
 }
 
 .about__wrapper--right .about__bold {
-  display: inline-flex;
+  display: flex;
   padding-top: 40px;
 }
 
@@ -301,10 +301,39 @@ color: #fff;
   text-transform: none;
   margin-right: 25px;
 }
+.main-wrapper {
+  display: flex;
+}
 
+fieldset {
+display: flex;
+border: none;
+}
 
+.filter__form {
+  width: 260px;
+}
 
+.filter__range {
 
+}
+.filter-radio {
+
+}
+
+.filter__checkbox {
+
+}
+
+.form__btn {
+font-size: 16px;
+font-weight: 500;
+line-height: 18px;
+  color: #000;
+  border: none;
+ background-color: #eeeeee;
+ text-transform: uppercase;
+}
 
 .features {
   display: flex;
@@ -352,11 +381,11 @@ color: #fff;
   font-weight: 700;
 
 }
+
 .catalog__title {
   font-size: 18px;
   font-weight: 700;
 }
-
 
 .contacts__title {
   font-size: 18px;
