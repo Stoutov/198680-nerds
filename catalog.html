@@ -9,7 +9,7 @@
 </head>
 <body>
 	<header class="header">
-		<div class="header__wrapper">
+		<div class="header__contanier">
 			<h1 class="visually-hidden">Веб-студия Нёрдс</h1>
 			<nav class="nav">
 				<div class="nav__logo">
@@ -28,7 +28,7 @@
 	</header>
 
 	<main class="main">
-		<div class="main-wrapper">
+		<div class="main__contanier">
 			<div class="filter">
 				<span class="visually-hidden">Фильтр готовых шаблонов:</span>
 				<form class="filter__form" action="get">
@@ -77,7 +77,8 @@
 
 			<section class="catalog">
 				<h2 class="visually-hidden">Каталог продуктов</h2>
-				<div class="sort">
+
+<!-- 				<div class="sort">
 					<span class="sort__title sort__title--bold">Сортировать:</span>
 					<div class="sort__type">
 						<a href="#">По цене</a>
@@ -88,16 +89,16 @@
 							<a href="#" class="sort__direction sort__direction--down">Вниз</a>
 						</span>
 					</div>
-				</div>
+				</div> -->
 				
-					<article class="catalog__item">
-						<a href="#" class="catalog__img"><img src="img/img-sedona.jpg" alt="Седона"></a>
-						<div class="catalog__item-active">
-							<h2 class="catalog__title">Sedona</h2>
-							<span class="catalog__desc">Информационный сайт 
-								для туристов</span>
-								<a href="#" class="catalog__btn">9 900 руб.</a>
-							
+				<article class="catalog__item">
+					<a href="#" class="catalog__img"><img src="img/img-sedona.jpg" alt="Седона"></a>
+					<div class="catalog__item-active">
+						<h2 class="catalog__title">Sedona</h2>
+						<span class="catalog__desc">Информационный сайт 
+							для туристов</span>
+							<a href="#" class="catalog__btn">9 900 руб.</a>
+						</div>
 						</article>
 
 						<article class="catalog__item">
@@ -122,7 +123,7 @@
 							<article class="catalog__item">
 								<a href="#" class="catalog__img"><img src="img/img-mishka.jpg" alt="Мишка"></a>
 								<div class="catalog__item-active">
-								
+
 									<h2 class="catalog__title">Mishka</h2>
 									<span class="catalog__desc">Интернет-магазин 
 										вязаных игрушек</span>
@@ -148,69 +149,70 @@
 										<a href="#" class="catalog__btn">9 900 руб.</a>
 									</div>
 								</article>
-							</div>
-</section>
-							<div class="pagination">
-								<a class="visually-hidden prev href="#">Предыдущая</a>
-								<a class="current" href="#">1</a>
-								<a href="#">2</a>
-								<a href="#">3</a>
-								<a class="next" href="#">Следующая</a>
-							</div>
-						
-					</div>
-
-					<section class="contacts">
-						<h2 class="visually-hidden">Контакты</h2>
-						<!-- <img src="img/map.jpg" alt=""> -->
-						<div class="contacts__location">
-
-							<span class="contacts__title">Nёrds design studio</span>
-							<p>191186, Санкт-Петербург, 
-								ул. Б. Конюшенная, д. 19/8
-								<a href="tel:+78122757575">тел. +7 (812) 275-75-75</a>
-							</p> 
-
 							
-							<a class="contacts__btn contacts__btn--red" href="#">Напишите нам</a>
+						
+						<div class="pagination">
+							<a class="pagination__item  pagination__item--preview visually-hidden" href="#">Предыдущая</a>
+							<a class="pagination__item pagination__item--current" href="#">1</a>
+							<a class="pagination__item" href="#">2</a>
+							<a class="pagination__item" href="#">3</a>
+							<a class="pagination__item pagination__item--next" href="#">Следующая</a>
+						</div>
+						</section>
+						<div class="visually-hidden modal-write">
+							<form action="#" method="post" class="modal-write__form">
+								<fieldset class="modal-write__name">
+									<legend class="modal-write__title">Напишите нам</legend>
+									<label for="name">Ваше имя:<input type="text" id="name" name="name" placeholder="Представьтесь, пожалуйста" required>
+									</label>
+								</fieldset>
+								<fieldset class="modal-write__email">
+									<label for="email">Ваш e-mail:<input type="email" id="email" name="email" placeholder="Для отправки ответа" required>
+									</label>
+								</fieldset>
+								<fieldset class="modal-write__message">
+									<label for="message">Текст письма:</label>
+									<textarea id="message" name="message" placeholder="В свободной форме" required></textarea>
+								</fieldset>
+								<button type="submit" class="modal-write__btn modal-write__btn--submit">Отправить</button>
+								<button type="reset" class="modal-write__btn modal-write__btn--close">Закрыть</button>
+							</form>
+						</div>
 
 						</div>
-					</section>
+						<section class="contacts">
+							<h2 class="visually-hidden">Контакты</h2>
+							<div class="contacts__location">
 
-					<div class="visually-hidden modal-write">
-						<form action="#" method="post" class="modal-write__form">
-							<fieldset class="modal-write__name">
-								<legend class="modal-write__title">Напишите нам</legend>
-								<label for="name">Ваше имя:<input type="text" id="name" name="name" placeholder="Представьтесь, пожалуйста" required>
-								</label>
-							</fieldset>
-							<fieldset class="modal-write__email">
-								<label for="email">Ваш e-mail:<input type="email" id="email" name="email" placeholder="Для отправки ответа" required>
-								</label>
-							</fieldset>
-							<fieldset class="modal-write__message">
-								<label for="message">Текст письма:</label>
-								<textarea id="message" name="message" placeholder="В свободной форме" required></textarea>
-							</fieldset>
-							<button type="submit" class="modal-write__btn modal-write__btn--submit">Отправить</button>
-							<button type="reset" class="modal-write__btn modal-write__btn--close">Закрыть</button>
-						</form>
-					</div>
+								<span class="contacts__title">Nёrds design studio</span>
+								<p>191186, Санкт-Петербург, 
+									ул. Б. Конюшенная, д. 19/8
+									<a href="tel:+78122757575">тел. +7 (812) 275-75-75</a>
+								</p> 
 
-				</main>
-				<footer class="footer">
-					<div class="footer__social">
-						<ul class="footer__social-list">
-							<li class="footer__social-item footer__social-item--vk"><a href="https://vk.com/htmlacademy"></a></li>
-							<li class="footer__social-item footer__social-item--fb"><a href="https://www.facebook.com/htmlacademy"></a></li>
-							<li class="footer__social-item footer__social-item--in"><a href="https://www.instagram.com/htmlacademy/"></a></li>
-						</ul>
-					</div>
-					<div class="footer__motion">
-						<b class="footer__bold">Давайте дружить, это выгодно!</b>
-						<span>Скидка 10% для друзей из социальных сетей.</span>
-					</div>
-				</footer>
 
-			</body>
-			</html>
+								<a class="contacts__btn contacts__btn--red" href="#">Напишите нам</a>
+
+							</div>
+						</section>
+					</main>
+					<footer class="footer">
+    <div class="footer__contanier">
+      <div class="footer__social">
+        <ul class="footer__social-list">
+          <li class="footer__social-item footer__social-item--vk">
+
+          <a href="https://vk.com/htmlacademy"></a></li>
+          <li class="footer__social-item footer__social-item--fb"><a href="https://www.facebook.com/htmlacademy"></a></li>
+          <li class="footer__social-item footer__social-item--in"><a href="https://www.instagram.com/htmlacademy/"></a></li>
+        </ul>
+      </div>
+      <div class="footer__motion">
+        <b class="footer__bold">Давайте дружить, это выгодно!</b>
+        <span>Скидка 10% для друзей из социальных сетей.</span>
+      </div>
+      </div>
+    </footer>
+
+				</body>
+				</html>
