@@ -371,7 +371,7 @@ a {
 
 fieldset {
   display: flex;
-  border: none;
+  border: 1px solid lightgreen;
 }
 
 .filter__form {
@@ -402,6 +402,14 @@ fieldset {
   border: none;
   background-color: #eeeeee;
   text-transform: uppercase;
+
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px 5px 5px 5px;
+  width: 260px;
+  height: 50px;;
+  background-color: #efefef;
 }
 .form__btn:hover {
   background-color: #dfdfdf;
