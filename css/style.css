@@ -459,11 +459,20 @@ fieldset {
 .sort__title--bold {
   font-size: 18px;
   font-weight: 700;
-
+  display: flex;
+  justify-content: flex-start;
+width: 100%;
 }
 
 .sort {
+  color: #000000;
+font-size: 14px;
+font-weight: 400;
+line-height: 18px;
+text-transform: uppercase;
   display: flex;
+  justify-content: flex-end;
+width: 100%;
 }
 
 .catalog {
