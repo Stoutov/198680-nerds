@@ -32,9 +32,9 @@
 			<div class="filter">
 				<span class="visually-hidden">Фильтр готовых шаблонов:</span>
 				<form class="filter__form" action="get">
-
+					<span class="filter__title">Стоимость:</span>
 					<fieldset class="filter__range">
-						<legend class="filter__title">Стоимость:</legend>
+						<legend class="visually-hidden filter__title">Стоимость:</legend>
 						<label for="cost-range">
 							<input type="range" min="0" max="15000" step="500" id="cost-range">
 						</label> 
@@ -80,7 +80,6 @@
 				<div class="sort">
 					<span class="sort__title sort__title--bold">Сортировать:</span>
 					<div class="sort__type">
-						<!-- <span class="sort__title sort__title--bold">Сортировать:</span> -->
 						<a href="#">По цене</a>
 						<a href="#">По типу</a>
 						<a href="#">По названию</a>
@@ -95,7 +94,7 @@
 					<a href="#" class="catalog__img"><img src="img/img-sedona.jpg" alt="Седона"></a>
 					<div class="catalog__item-active">
 						<h2 class="catalog__title">Sedona</h2>
-						<span class="catalog__desc">Информационный сайт<br> 
+						<span class="catalog__desc">Информационный сайт
 							для туристов</span>
 							<a href="#" class="catalog__btn">9 900 руб.</a>
 						</div>
@@ -105,7 +104,7 @@
 						<a href="#" class="catalog__img"><img src="img/img-pink.jpg" alt="Пинк"></a>
 						<div class="catalog__item-active">
 							<h2 class="catalog__title">Pink App</h2>
-							<span class="catalog__desc">Продуктовый лендинг<br>
+							<span class="catalog__desc">Продуктовый лендинг
 								приложения для iOS и Android</span>
 								<a href="#" class="catalog__btn">9 900 руб.</a>
 							</div>
@@ -159,23 +158,25 @@
 									<a class="pagination__item pagination__item--next" href="#">Следующая</a>
 								</div>
 							</section>
-							<div class="visually-hidden modal-write">
+							
+							<div class="modal-write">
 								<form action="#" method="post" class="modal-write__form">
 									<fieldset class="modal-write__name">
-										<legend class="modal-write__title">Напишите нам</legend>
-										<label for="name">Ваше имя:<input type="text" id="name" name="name" placeholder="Представьтесь, пожалуйста" required>
+										<legend class="modal-write__title">Напишите нам
+											<button type="reset" class="modal-write__btn modal-write__btn--close">Закрыть</button>
+										</legend>
+										<label for="name">Ваше имя:<br><input type="text" id="name" name="name" placeholder="Представьтесь, пожалуйста" required>
 										</label>
 									</fieldset>
 									<fieldset class="modal-write__email">
-										<label for="email">Ваш e-mail:<input type="email" id="email" name="email" placeholder="Для отправки ответа" required>
+										<label for="email">Ваш e-mail:<br><input type="email" id="email" name="email" placeholder="Для отправки ответа" required>
 										</label>
 									</fieldset>
 									<fieldset class="modal-write__message">
 										<label for="message">Текст письма:</label>
-										<textarea id="message" name="message" placeholder="В свободной форме" required></textarea>
+										<textarea class="modal-write__textarea" id="message" name="message" placeholder="В свободной форме" required></textarea>
 									</fieldset>
 									<button type="submit" class="modal-write__btn modal-write__btn--submit">Отправить</button>
-									<button type="reset" class="modal-write__btn modal-write__btn--close">Закрыть</button>
 								</form>
 							</div>
 

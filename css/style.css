@@ -16,6 +16,17 @@ a {
   text-decoration: none;
 }
 
+fieldset {
+  display: flex;
+  color: #283136;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 38px;
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
 .header__contanier,
 .main__contanier,
 .slider__contanier,
@@ -98,6 +109,7 @@ a {
   font-size: 16px;
   font-weight: 500;
   color: #000;
+  cursor: pointer;
   padding-left: 270px;
 }
 .nav__cart:hover,
@@ -216,6 +228,7 @@ a {
   font-weight: 400;
   color: #283136;
   text-transform: none;
+  margin-bottom: 35px;
 }
 
 
@@ -362,35 +375,28 @@ a {
   text-transform: none;
   margin-right: 25px;
 }
-
-
-fieldset {
-  display: flex;
-  border: 1px solid lightgreen;
-}
-
-.filter__form {
-  width: 35%px;
-  background-color: lightgreen;
-}
-
-.filter__range {
-
-}
-.filter-radio {
-
-}
-
-.filter__checkbox {
-
-}
 .filter {
   width: 360px;
   font-size: 16px;
   font-weight: 400;
-  line-height: 18px;
   text-transform: none;
 }
+
+.filter__form {
+  width: 360px;
+}
+
+.filter__range {
+  margin-bottom: 62px;
+}
+.filter__radio {
+  margin-bottom: 57px;
+}
+
+.filter__checkbox {
+  margin-bottom: 50px;
+}
+
 .form__btn {
   font-size: 16px;
   font-weight: 500;
@@ -452,8 +458,19 @@ fieldset {
 }
 
 .filter__title {
+  color: #000000;
   font-size: 18px;
   font-weight: 700;
+  text-transform: uppercase;
+}
+
+.filter__range {
+  width: 260px;
+  min-height: 80px;
+  background-color: #eeeeee;
+  background-image: url(../img/cost__range.png);
+  background-repeat: no-repeat;
+  background-position: 60px 30px;
 }
 
 .sort__title--bold {
@@ -479,6 +496,7 @@ fieldset {
 
 .sort__type {
   margin-left: 260px;
+  opacity: 0.3;
 }
 .catalog {
   width: 755px;
@@ -517,6 +535,7 @@ fieldset {
 
 .catalog__item-active:hover {
   opacity: 1;
+  transition-duration: 0.3s;
 }
 .catalog__desc {
   color: #666666;
@@ -532,7 +551,6 @@ fieldset {
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  color: #fff;
   border-radius: 5px 5px 5px 5px;
   width: 160px;
   height: 50px;;
@@ -555,21 +573,39 @@ fieldset {
   width: 760px;
   display: flex;
   justify-content: flex-start;
-  background-color: #aacaca;
   margin-bottom: 60px;
 
   /*временно*/
 }
 
 .pagination__item {
-  color: #000000;
   font-size: 16px;
   font-weight: 500;
   line-height: 18px;
-  width: 50px;
-  height: 50px;
+  color: #000;
+  border: 3px solid #eeeeee;
   background-color: #eeeeee;
+  text-transform: uppercase;
   margin-right: 10px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 2px 2px 2px 2px;
+  width: 47px;
+  height: 47px;;
+}
+.pagination__item--current {
+  background-color: #ffffff;
+  border: 3px solid #dbdbdb;
+}
+.pagination__item--preview,
+.pagination__item--next {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 2px 2px 2px 2px;
+  width: 260px;
+  height: 50px;;
 }
 .contacts {
   display: flex;
@@ -707,56 +743,121 @@ fieldset {
   }
 
   .modal-write {
-    width:  960px;
-    min-height: 590px;
-    background-color: #eee33d;
+    position: fixed;
+    width:  860px;
+    padding-top: 73px;
+    padding-bottom: 84px;
+    padding-left: 100px;
+    padding-right: 0px;
+    top: 180px;
+    left: 50%;
+    margin-left: -470px;
+    background-color: #ffffff;
     box-shadow: 0 20px 40px rgba(0, 1, 1, 0.75);
-
-
-    /*временно, наверное*/
-    margin: 0 auto;
+    text-transform: none;
   }
 
   .modal-write__form {
-    margin-top: 73px;
-    min-height: 433px;
-    width: 760px;
-    display: flex;
-    flex-wrap: wrap;
-    /* justify-content: space-around;*/
-    align-items: flex-end;
-  }
+   display: flex;
+   flex-wrap: wrap;
+   align-items: flex-end;
+ }
+ .modal-write__title {
+  font-size: 45px;
+  font-weight: 500;
+  line-height: 45px;
+  margin-bottom: 20px;
+}
 
-  .modal-write__name,
-  .modal-write__email,
-  .modal-write__message {
-    color: #000000;
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 18px;
-    text-transform: none;
+.modal-write__name,
+.modal-write__email,
+.modal-write__message {
+  font-weight: 700;
+}
+.modal-write__name input[type="text"],
+.modal-write__email input[type="email"] {
+  color: #444444;
+  font-size: 16px;
+  font-weight: 400;
+  box-sizing: border-box;
+  width: 360px;
+  padding-top: 18px;
+  padding-bottom: 16px;
+  padding-left: 16px;
+  padding-right: 135px;
+  margin-bottom: 18px;
+  margin-right: 40px;
+  border: 2px solid #d7dcde;
+  opacity: 0.7;
+}
+  
+.modal-write__textarea {
+  min-height: 118px;
+  padding-top: 14px;
+  padding-bottom: 87px;
+  padding-left: 15px;
+  padding-right: 560px;
+  resize: none;
+  margin-bottom: 47px;
+  border: 2px solid #d7dcde;
+  opacity: 0.7;
+}
+.modal-write__name input[type="text"]:hover,
+.modal-write__email input[type="email"]:hover,
+.modal-write__textarea:hover {
+  border: 2px solid #b4b9bb;
+}
+.modal-write__name input[type="text"]:focus,
+.modal-write__email input[type="email"]:focus,
+.modal-write__textarea:focus {
+  outline: none;
+  border: 2px solid #000000;
+}
 
-  }
-  .modal-write__title {
-    color: #000000;
-    font-size: 45px;
-    font-weight: 500;
-    line-height: 45px;
-    text-transform: uppercase;
-  }
+.modal-write__btn--submit {
+  border-radius: 5px 5px 5px 5px;
+  width: 220px;
+  height: 50px;;
+  border: none;
+  background-color: #fb565a;
 
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18px;
+  text-transform: uppercase;
+}
 
+.modal-write__btn--submit:hover {
+  background-color: #e74246;
+}
 
-  .modal-write__btn--submit {
-    border-radius: 5px 5px 5px 5px;
-    width: 220px;
-    height: 50px;;
-    border: none;
-    background-color: #fb565a;
+.modal-write__btn--submit:active {
+  box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.1);
+  background-color:  #d7373b;
+  color: #e47175;
+}
 
-    color: #ffffff;
-    font-size: 16px;
-    font-weight: 5s00;
-    line-height: 18px;
-    text-transform: uppercase;
-  }
+.modal-write__btn--close {
+  position: relative;
+  top: -15px;
+  right: -427px;
+  width: 21px;
+  height: 21px;
+  font-size: 0;
+  background-image: url(../svg-nerds/close-cross.svg);
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  opacity: 0.3;
+}
+
+.modal-write__btn--close:hover {
+  opacity: 1;
+}
+.modal-write__btn--close:active {
+  opacity: 0.1;
+}
+.modal-write__btn--close:focus {
+  outline-color: #d7373b;
+}
