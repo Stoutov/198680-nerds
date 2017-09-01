@@ -20,7 +20,7 @@
 					<li><a class="nav__item" href="#">Клиенты</a></li>
 					<li><a class="nav__item nav__item--active" href="catalog.html">Магазин</a></li>
 					<li><a class="nav__item" href="#">Контакты</a></li>
-					<li><a class="nav__cart" href="#">Корзина</a></li>
+					<li class="nav__cart"><a class="nav__cart--link" href="#">Корзина</a></li>
 				</ul>
 			</nav>
 			<h2 class="header__title">Магазин готовых шаблонов</h2>
@@ -41,8 +41,8 @@
 						</label> --> 
 					</fieldset>
 					<div class="cost__range">
-					<label>От<input type="text" name="min-cost" value="0" placeholder="0"></label>
-					<label>До<input type="text" name="max-cost" value="15000" placeholder="15000"></label>
+						<label>От<input type="text" name="min-cost" value="0" placeholder="0"></label>
+						<label>До<input type="text" name="max-cost" value="15000" placeholder="15000"></label>
 					</div>
 					<fieldset class="filter__radio">
 						<legend class="filter__title">Сетка:</legend>
@@ -84,18 +84,18 @@
 				<div class="sort">
 					<span class="sort__title sort__title--bold">Сортировать:</span>
 					<div class="sort__type">
-						<a href="#">По цене</a>
-						<a href="#">По типу</a>
-						<a href="#">По названию</a>
+						<a class="sort-_type sort__type--link" href="#">По цене</a>
+						<a class="sort-_type sort__type--link" href="#">По типу</a>
+						<a class="sort-_type sort__type--link" href="#">По названию</a>
 						<span class="sort__direction">
-							<a href="#" class="sort__direction sort__direction--up">Вверх</a>
-							<a href="#" class="sort__direction sort__direction--down">Вниз</a>
+							<button class="sort__direction sort__direction--up">Вверх</button>
+							<button class="sort__direction sort__direction--down">Вниз</button>
 						</span>
 					</div>
 				</div>
 				
 				<article class="catalog__item">
-					<a href="#" class="catalog__img"><img src="img/img-sedona.jpg" alt="Седона"></a>
+					<a href="#" class="catalog__img"><img src="img/img-sedona.jpg" alt="Седона" width="360" height="576"></a>
 					<div class="catalog__item-active">
 						<h2 class="catalog__title">Sedona</h2>
 						<span class="catalog__desc">Информационный сайт
@@ -105,7 +105,7 @@
 					</article>
 
 					<article class="catalog__item">
-						<a href="#" class="catalog__img"><img src="img/img-pink.jpg" alt="Пинк"></a>
+						<a href="#" class="catalog__img"><img src="img/img-pink.jpg" alt="Пинк" width="360" height="576"></a>
 						<div class="catalog__item-active">
 							<h2 class="catalog__title">Pink App</h2>
 							<span class="catalog__desc">Продуктовый лендинг
@@ -115,7 +115,7 @@
 						</article>
 
 						<article class="catalog__item">
-							<a href="#" class="catalog__img"><img src="img/img-barbershop.jpg" alt="Бородинский"></a>
+							<a href="#" class="catalog__img"><img src="img/img-barbershop.jpg" alt="Бородинский" width="360" height="576"></a>
 							<div class="catalog__item-active">
 								<h2 class="catalog__title">Barbershop</h2>
 								<span class="catalog__desc">Сайт салона красоты. Для мужчин, да.</span>
@@ -124,7 +124,7 @@
 						</article>
 
 						<article class="catalog__item">
-							<a href="#" class="catalog__img"><img src="img/img-mishka.jpg" alt="Мишка"></a>
+							<a href="#" class="catalog__img"><img src="img/img-mishka.jpg" alt="Мишка" width="360" height="576"></a>
 							<div class="catalog__item-active">
 
 								<h2 class="catalog__title">Mishka</h2>
@@ -136,7 +136,7 @@
 							</article>
 
 							<article class="catalog__item">
-								<a href="#" class="catalog__img"><img src="img/img-aplus.jpg" alt="А Плюс"></a>
+								<a href="#" class="catalog__img"><img src="img/img-aplus.jpg" alt="А Плюс" width="360" height="576"></a>
 								<div class="catalog__item-active">
 									<h2 class="catalog__title">A Plus</h2>
 									<span class="catalog__desc">Лендинг курсов повышения
@@ -146,7 +146,7 @@
 								</article>
 
 								<article class="catalog__item">
-									<a href="#" class="catalog__img"><img src="img/img-kvast.jpg" alt="Кваст"></a>
+									<a href="#" class="catalog__img"><img src="img/img-kvast.jpg" alt="Кваст" width="360" height="576"></a>
 									<div class="catalog__item-active">
 										<h2 class="catalog__title">Кваст</h2>
 										<span class="catalog__desc">Промо-сайт производителя крафтового кваса</span>
