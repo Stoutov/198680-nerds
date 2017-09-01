@@ -29,46 +29,50 @@
 
 	<main class="main">
 		<div class="main__contanier">
+
 			<div class="filter">
 				<span class="visually-hidden">Фильтр готовых шаблонов:</span>
 				<form class="filter__form" action="get">
 					<span class="filter__title">Стоимость:</span>
 					<fieldset class="filter__range">
-						<legend class="visually-hidden filter__title">Стоимость:</legend>
+<!-- 						<legend class="visually-hidden filter__title">Стоимость:</legend>
 						<label for="cost-range">
 							<input type="range" min="0" max="15000" step="500" id="cost-range">
-						</label> 
+						</label> --> 
 					</fieldset>
-
+					<div class="cost__range">
+					<label>От<input type="text" name="min-cost" value="0" placeholder="0"></label>
+					<label>До<input type="text" name="max-cost" value="15000" placeholder="15000"></label>
+					</div>
 					<fieldset class="filter__radio">
 						<legend class="filter__title">Сетка:</legend>
 						<label for="adaptive" class="filter__option">
 							<input class="visually-hidden form__input form__input--radio" id="adaptive" type="radio"  name="grid-type" checked>Адаптивная
 						</label>
 						<label for="fix" class="filter__option">
-							<input class="visually-hidden form__input form__input--radio"  id="fix" type="radio" name="grid-type">Фиксированная
+							<input class="visually-hidden form__input form__input--radio" id="fix" type="radio" name="grid-type">Фиксированная
 						</label>
 						<label for="rubbery" class="filter__option">
-							<input class="visually-hidden form__input form__input--radio"  id="rubbery" type="radio" name="grid-type">Резиновая
+							<input class="visually-hidden form__input form__input--radio" id="rubbery" type="radio" name="grid-type">Резиновая
 						</label>
 					</fieldset>
 
 					<fieldset class="filter__checkbox">
 						<legend class="filter__title">Особенности:</legend>
 						<label for="slider" class="filter__option">
-							<input class="visually-hidden form__input form__input--checkbox"  id="slider" type="checkbox" name="filter__sider" checked>Слайдер
+							<input class="visually-hidden form__input form__input--checkbox" id="slider" type="checkbox" name="filter__sider" checked>Слайдер
 						</label>
 						<label for="features" class="filter__option">
-							<input class="visually-hidden form__input form__input--checkbox"  id="features" type="checkbox" name="filter__features">Блок преимуществ
+							<input class="visually-hidden form__input form__input--checkbox" id="features" type="checkbox" name="filter__features">Блок преимуществ
 						</label>
 						<label for="news" class="filter__option">
-							<input class="visually-hidden form__input form__input--checkbox"  id="news" type="checkbox" name="filter__news" checked>Новости
+							<input class="visually-hidden form__input form__input--checkbox" id="news" type="checkbox" name="filter__news" checked>Новости
 						</label>
 						<label for="gallery" class="filter__option">
-							<input class="visually-hidden form__input form__input--checkbox"  id="gallery" type="checkbox" name="filter__gallery">Галерея
+							<input class="visually-hidden form__input form__input--checkbox" id="gallery" type="checkbox" name="filter__gallery">Галерея
 						</label>
 						<label for="cart" class="filter__option">
-							<input class="visually-hidden form__input form__input--checkbox"  id="cart" type="checkbox" name="filter__cart">Корзина
+							<input class="visually-hidden form__input form__input--checkbox" id="cart" type="checkbox" name="filter__cart">Корзина
 						</label>
 					</fieldset>
 					<button class="form__btn form__btn--grey" type="submit">Показать</button>
@@ -159,7 +163,7 @@
 								</div>
 							</section>
 							
-							<div class="modal-write">
+							<div class="visually-hidden modal-write">
 								<form action="#" method="post" class="modal-write__form">
 									<fieldset class="modal-write__name">
 										<legend class="modal-write__title">Напишите нам
@@ -184,10 +188,9 @@
 						<section class="contacts">
 							<h2 class="visually-hidden">Контакты</h2>
 							<div class="contacts__location">
-
 								<span class="contacts__title">Nёrds design studio</span>
-								<p>191186, Санкт-Петербург, 
-									ул. Б. Конюшенная, д. 19/8
+								<p>191186, Санкт-Петербург,<br> 
+									ул. Б. Конюшенная, д. 19/8 
 									<a href="tel:+78122757575">тел. +7 (812) 275-75-75</a>
 								</p> 
 								<a class="contacts__btn contacts__btn--red" href="#">Напишите нам</a>
@@ -200,9 +203,9 @@
 							<div class="footer__social">
 								<ul class="footer__social-list">
 									<li class="footer__social-item footer__social-item--vk">
-										<a href="https://vk.com/htmlacademy"></a></li>
-										<li class="footer__social-item footer__social-item--fb"><a href="https://www.facebook.com/htmlacademy"></a></li>
-										<li class="footer__social-item footer__social-item--in"><a href="https://www.instagram.com/htmlacademy/"></a></li>
+										<a class="visually-hidden" href="https://vk.com/htmlacademy">Vkontakte</a></li>
+										<li class="footer__social-item footer__social-item--fb"><a class="visually-hidden" href="https://www.facebook.com/htmlacademy">Facebook</a></li>
+										<li class="footer__social-item footer__social-item--in"><a class="visually-hidden" href="https://www.instagram.com/htmlacademy/">Instagram</a></li>
 									</ul>
 								</div>
 								<div class="footer__motion">
