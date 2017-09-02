@@ -1,6 +1,6 @@
 body  {
-	width:  100%;
-	/*  margin: 0 auto;*/
+	width:  1440px;
+	  margin: 0 auto;
 	font-family:  "Roboto",  "Helvetica", sans-serif;
 	font-size:  16px;
 	line-height:  24px;
@@ -34,11 +34,14 @@ input {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
-	padding: 0 40px;
+	padding: 0 ;
 }
 .header__contanier,
 .slider__contanier {
 	background-color: #eeeeee;
+}
+.contacts__contanier{
+	width: 1440px;
 }
 .visually-hidden:not(.form__input)  {
 	position: absolute;
@@ -652,13 +655,12 @@ color:  #000;
 }
 .contacts {
 	display:  flex;
-	justify-content:  flex-start;
 	align-items:  center;
+	width: 1440px;
+	margin: 0 auto;
 	background-image: url(../img/map.png);
 	background-color: #eeeeee;
-	width: 100%;
 	min-height: 410px;
-	margin: 0 auto;
 	margin-bottom:  35px;
 }
 .contacts__location {
@@ -667,8 +669,8 @@ color:  #000;
 	justify-content:  center;
 	width:  320px;
 	height: 310px;
-	margin-left:  140px;
 	background-color: #ffffff;
+	margin-left: 140px;
 }
 .contacts__title  {
 	display:  flex;
