@@ -87,6 +87,8 @@ padding: 12px 15px;
 margin-right: 24px;
 font-size: 16px;
 font-weight: 500;
+line-height: 30px;
+text-transform: uppercase;
 color: #000000;
 }
 .nav__item:hover,
@@ -554,10 +556,10 @@ justify-content: center;
 align-items: flex-end;
 color: #000000;
 text-transform: none;
-padding-top: 44px;
+padding-top: 39px;
 padding-bottom: 78px;
 font-size: 55px;
-font-weight: 700;
+font-weight: 500;
 }
 .filter__title {
 	display: block;
