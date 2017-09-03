@@ -51,24 +51,24 @@
 						</div>
 						<fieldset class="filter__radio">
 							<legend class="filter__title">Сетка:</legend>
-							<input id="adaptive" type="radio"  name="grid-type" checked>
+							<input class="visually-hidden" id="adaptive" type="radio"  name="grid-type" checked>
 							<label for="adaptive"><span></span>Адаптивная</label>
-							<input id="fix" type="radio" name="grid-type">
+							<input class="visually-hidden" id="fix" type="radio" name="grid-type">
 							<label for="fix"><span></span>Фиксированная</label>
-							<input id="rubbery" type="radio" name="grid-type">
+							<input class="visually-hidden" id="rubbery" type="radio" name="grid-type">
 							<label for="rubbery"><span></span>Резиновая</label>
 						</fieldset>
 						<fieldset class="filter__checkbox">
 							<legend class="filter__title">Особенности:</legend>
-							<input type="checkbox" id="slider" name="checkbox__slider" checked/>
+							<input class="visually-hidden" type="checkbox" id="slider" name="checkbox__slider" checked/>
 							<label for="slider"><span></span>Слайдер</label>
-							<input type="checkbox" id="features" name="checkbox__features"/>
+							<input class="visually-hidden" type="checkbox" id="features" name="checkbox__features"/>
 							<label for="features"><span></span>Блок преимуществ</label>
-							<input type="checkbox" id="news" name="checkbox__news" checked/>
+							<input class="visually-hidden" type="checkbox" id="news" name="checkbox__news" checked/>
 							<label for="news"><span></span>Новости</label>
-							<input type="checkbox" id="gallery" name="checkbox__gallery"/>
+							<input class="visually-hidden" type="checkbox" id="gallery" name="checkbox__gallery"/>
 							<label for="gallery"><span></span>Галерея</label>
-							<input type="checkbox" id="cart" name="checkbox__cart"/>
+							<input class="visually-hidden" type="checkbox" id="cart" name="checkbox__cart"/>
 							<label for="cart"><span></span>Корзина</label>
 						</fieldset>
 						<button class="form__btn form__btn--grey" type="submit">Показать</button>
@@ -169,7 +169,7 @@
 					</form>
 				</div>
 			</div>
-			<!-- <iframe class="contacts__contanier" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5991043651609!2d30.32089461641186!3d59.93879418187622!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1504366443074" width="1440" height="415" frameborder="0" style="border:0" allowfullscreen></iframe> -->
+
 			<div class="contacts__contanier">
 				<section class="contacts">
 					<h2 class="visually-hidden">Контакты</h2>
@@ -177,7 +177,7 @@
 						<span class="contacts__title">Nёrds design studio</span>
 						<p>191186, Санкт-Петербург,<br>
 							ул. Б. Конюшенная, д. 19/8
-							<a href="tel:+78122757575">тел. +7 (812) 275-75-75</a>
+							<a class="contacts__tel" href="tel:+78122757575">тел. +7 (812) 275-75-75</a>
 						</p>
 						<a class="contacts__btn contacts__btn--red" href="#">Напишите нам</a>
 					</div>
