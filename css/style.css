@@ -915,6 +915,8 @@ font-weight: 400;
 color: #283136;
 text-transform: none;
 }
+
+
 .modal-write {
 display: none;
 position: fixed;
@@ -929,6 +931,9 @@ margin-left: -470px;
 background-color: #ffffff;
 box-shadow: 0 20px 40px rgba(0, 1, 1, 0.75);
 text-transform: none;
+}
+.modal-write--show {
+	display: flex;
 }
 .modal-write__form {
 display: flex;
