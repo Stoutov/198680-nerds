@@ -429,7 +429,7 @@ padding-bottom: 8px;*/
 	padding-top: 20px;
 }
 .features__title {
-		color: #000000;
+	color: #000000;
 	font-size: 45px;
 	font-weight: 700;
 	line-height: 10px;
@@ -892,7 +892,7 @@ input[type="checkbox"] + label span:hover {
 	background-image: url(../img/map.png);
 	background-color: #eeeeee;
 	min-height: 410px;
-	margin-bottom: 35px;
+	margin-bottom: 70px;
 }
 .contacts__location {
 	display: inline-flex;
@@ -951,19 +951,22 @@ input[type="checkbox"] + label span:hover {
 	background-color:  #d7373b;
 	color: #e47175;
 }
+
 .footer__social {
-	width: 1160px;
+	width: 943px;
 	display: flex;
 	justify-content: flex-start;
-	align-items: center;
-	margin-bottom: 70px;
+	align-items: flex-center;
+	margin-right: 210px;
+	margin-bottom: 100px;
 }
 .footer__social-list {
 	display: flex;
 	width: 260px;
 	justify-content: space-between;
 	list-style: none;
-	align-items: flex-start;
+	margin: 0;
+	padding: 0;
 }
 .footer__social-item {
 	width: 78px;
@@ -999,13 +1002,16 @@ input[type="checkbox"] + label span:hover {
 	line-height: 36px;
 	color: #000000;
 	text-transform: none;
+	margin: 0;
+	padding: 0;
 }
 .footer__motion {
 	font-size: 16px;
 	font-weight: 400;
 	color: #283136;
 	text-transform: none;
-	margin-left: 140px;
+	margin-left: 141px;
+
 }
 .footer__text--span {
 	font-size: 16px;
