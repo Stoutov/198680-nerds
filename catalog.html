@@ -1,107 +1,106 @@
 <!DOCTYPE html>
 <html lang="ru">
-	<head>
-		<meta charset="utf-8">
-		<title>Каталог Нёрдс</title>
-		<link rel="stylesheet" href="css/normalize.css">
-		<link rel="stylesheet" href="css/style.css">
-		<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
-	</head>
-	<body>
-		<header class="header">
-			<div class="header__contanier">
-				<h1 class="visually-hidden">Веб-студия Нёрдс</h1>
-				<nav class="nav">
-					<div class="nav__logo">
-						<a href="index.html"><img src="img/nerds-logo.svg" alt="Логотип Нёрдс" width="165" height="65"></a>
-					</div>
-					<ul class="nav__list">
-						<li><a class="nav__item" href="index.html">Студия</a></li>
-						<li><a class="nav__item" href="#">Клиенты</a></li>
-						<li><a class="nav__item nav__item--active" href="catalog.html">Магазин</a></li>
-						<li><a class="nav__item nav__item--contacts" href="#">Контакты</a></li>
-					</ul>
-					<div class="nav__cart"><a class="nav__cart--link" href="#">Корзина</a></div>
-				</nav>
-				<h2 class="header__title">Магазин готовых шаблонов</h2>
-			</div>
-		</header>
-		<main class="main">
-			<div class="main__contanier">
-				<div class="filter">
-					<span class="visually-hidden">Фильтр готовых шаблонов:</span>
-					<span class="filter__title">Стоимость:</span>
-					<form class="filter__form" action="get">
-						<div class="wrapper-filter__range">
-							<fieldset class="filter__range-field">
-								<div class="cost__controls">
-									<div class="cost__scale">
-										<div class="scale__slider" style="margin-left: 10%; width: 60%"></div>
-									</div>
-									<div class="toggle toggle--min"></div>
-									<div class="toggle toggle--max"></div>
-								</div>
-								<div class="cost__range">
-									<label>От</label>
-									<input class="price__range price__range--min" type="text" name="min__cost" value="0" placeholder="0">
-									<label>До</label>
-									<input class="price__range price__range--max" type="text" name="max__cost" value="15000" placeholder="15000">
-								</div>
-							</fieldset>
-						</div>
-						<fieldset class="filter__radio">
-							<legend class="filter__title">Сетка:</legend>
-							<input class="visually-hidden" id="adaptive" type="radio"  name="grid-type" checked>
-							<label for="adaptive"><span></span>Адаптивная</label>
-							<input class="visually-hidden" id="fix" type="radio" name="grid-type">
-							<label for="fix"><span></span>Фиксированная</label>
-							<input class="visually-hidden" id="rubbery" type="radio" name="grid-type">
-							<label for="rubbery"><span></span>Резиновая</label>
-						</fieldset>
-						<fieldset class="filter__checkbox">
-							<legend class="filter__title">Особенности:</legend>
-							<input class="visually-hidden" type="checkbox" id="slider" name="checkbox__slider" checked/>
-							<label for="slider"><span></span>Слайдер</label>
-							<input class="visually-hidden" type="checkbox" id="features" name="checkbox__features"/>
-							<label for="features"><span></span>Блок преимуществ</label>
-							<input class="visually-hidden" type="checkbox" id="news" name="checkbox__news" checked/>
-							<label for="news"><span></span>Новости</label>
-							<input class="visually-hidden" type="checkbox" id="gallery" name="checkbox__gallery"/>
-							<label for="gallery"><span></span>Галерея</label>
-							<input class="visually-hidden" type="checkbox" id="cart" name="checkbox__cart"/>
-							<label for="cart"><span></span>Корзина</label>
-						</fieldset>
-						<button class="form__btn form__btn--grey" type="submit">Показать</button>
-					</form>
+<head>
+	<meta charset="utf-8">
+	<title>Каталог Нёрдс</title>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
+</head>
+<body>
+	<header class="header">
+		<div class="header__contanier">
+			<h1 class="visually-hidden">Веб-студия Нёрдс</h1>
+			<nav class="nav">
+				<div class="nav__logo">
+					<a href="index.html"><img src="img/nerds-logo.svg" alt="Логотип Нёрдс" width="165" height="65"></a>
 				</div>
-				<section class="catalog">
-					<h2 class="visually-hidden">Каталог продуктов</h2>
-					<div class="sort">
-						<span class="sort__title sort__title--bold">Сортировать:</span>
-						<div class="sort__type">
-							<a class="sort__link sort__link--price" href="#">По цене</a>
-							<a class="sort__link sort__link--type" href="#">По типу</a>
-							<a class="sort__link sort__link--name" href="#">По названию</a>
-						</div>
-						<span class="sort__direction">
-							<button class="sort__direction sort__direction--down">Вверх</button>
-							<button class="sort__direction sort__direction--up">Вниз</button>
-						</span>
+				<ul class="nav__list">
+					<li><a class="nav__item" href="index.html">Студия</a></li>
+					<li><a class="nav__item" href="#">Клиенты</a></li>
+					<li><a class="nav__item nav__item--active" href="catalog.html">Магазин</a></li>
+					<li><a class="nav__item nav__item--contacts" href="#">Контакты</a></li>
+				</ul>
+				<div class="nav__cart"><a class="nav__cart--link" href="#">Корзина</a></div>
+			</nav>
+			<h2 class="header__title">Магазин готовых шаблонов</h2>
+		</div>
+	</header>
+	<main class="main">
+		<div class="main__contanier">
+			<div class="filter">
+				<span class="visually-hidden">Фильтр готовых шаблонов:</span>
+				<span class="filter__title">Стоимость:</span>
+				<form class="filter__form" action="get">
+					<div class="wrapper-filter__range">
+						<fieldset class="filter__range-field">
+							<div class="cost__controls">
+								<div class="cost__scale">
+									<div class="scale__slider" style="margin-left: 10%; width: 60%"></div>
+								</div>
+								<div class="toggle toggle--min"></div>
+								<div class="toggle toggle--max"></div>
+							</div>
+							<div class="cost__range">
+								<label>От</label>
+								<input class="price__range price__range--min" type="text" name="min__cost" value="0" placeholder="0">
+								<label>До</label>
+								<input class="price__range price__range--max" type="text" name="max__cost" value="15000" placeholder="15000">
+							</div>
+						</fieldset>
 					</div>
-					<article class="catalog__item">
-						<a href="#" class="catalog__img"><img src="img/img-sedona.jpg" alt="Седона" width="360" height="576"></a>
-						<div class="catalog__item-active">
-							<h2 class="catalog__title">Sedona</h2>
-							<span class="catalog__desc">Информационный сайт
-							для туристов</span>
-							<a href="#" class="catalog__btn">9 900 руб.</a>
-						</div>
-					</article>
-					<article class="catalog__item">
-						<a href="#" class="catalog__img"><img src="img/img-pink.jpg" alt="Пинк" width="360" height="576"></a>
-						<div class="catalog__item-active">
-							<h2 class="catalog__title">Pink App</h2>
-							<span class="catalog__desc">Продуктовый лендинг
+					<fieldset class="filter__radio">
+						<legend class="filter__title">Сетка:</legend>
+						<input class="visually-hidden" id="adaptive" type="radio"  name="grid-type" checked>
+						<label for="adaptive"><span></span>Адаптивная</label>
+						<input class="visually-hidden" id="fix" type="radio" name="grid-type">
+						<label for="fix"><span></span>Фиксированная</label>
+						<input class="visually-hidden" id="rubbery" type="radio" name="grid-type">
+						<label for="rubbery"><span></span>Резиновая</label>
+					</fieldset>
+					<fieldset class="filter__checkbox">
+						<legend class="filter__title">Особенности:</legend>
+						<input class="visually-hidden" type="checkbox" id="slider" name="checkbox__slider" checked/>
+						<label for="slider"><span></span>Слайдер</label>
+						<input class="visually-hidden" type="checkbox" id="features" name="checkbox__features"/>
+						<label for="features"><span></span>Блок преимуществ</label>
+						<input class="visually-hidden" type="checkbox" id="news" name="checkbox__news" checked/>
+						<label for="news"><span></span>Новости</label>
+						<input class="visually-hidden" type="checkbox" id="gallery" name="checkbox__gallery"/>
+						<label for="gallery"><span></span>Галерея</label>
+						<input class="visually-hidden" type="checkbox" id="cart" name="checkbox__cart"/>
+						<label for="cart"><span></span>Корзина</label>
+					</fieldset>
+					<button class="form__btn form__btn--grey" type="submit">Показать</button>
+				</form>
+			</div>
+			<section class="catalog">
+				<h2 class="visually-hidden">Каталог продуктов</h2>
+				<div class="sort">
+					<span class="sort__title sort__title--bold">Сортировать:</span>
+					<div class="sort__type">
+						<a class="sort__link sort__link--price" href="#">По цене</a>
+						<a class="sort__link sort__link--type" href="#">По типу</a>
+						<a class="sort__link sort__link--name" href="#">По названию</a>
+					</div>
+					<span class="sort__direction">
+						<button class="sort__direction sort__direction--down">Вверх</button>
+						<button class="sort__direction sort__direction--up">Вниз</button>
+					</span>
+				</div>
+				<article class="catalog__item">
+					<a href="#" class="catalog__img"><img src="img/img-sedona.jpg" alt="Седона" width="360" height="576"></a>
+					<div class="catalog__item-active">
+						<h2 class="catalog__title">Sedona</h2>
+						<span class="catalog__desc">Информационный сайт для туристов</span>
+						<a href="#" class="catalog__btn">9 900 руб.</a>
+					</div>
+				</article>
+				<article class="catalog__item">
+					<a href="#" class="catalog__img"><img src="img/img-pink.jpg" alt="Пинк" width="360" height="576"></a>
+					<div class="catalog__item-active">
+						<h2 class="catalog__title">Pink App</h2>
+						<span class="catalog__desc">Продуктовый лендинг
 							приложения для iOS и Android</span>
 							<a href="#" class="catalog__btn">9 900 руб.</a>
 						</div>
@@ -119,86 +118,86 @@
 						<div class="catalog__item-active">
 							<h2 class="catalog__title">Mishka</h2>
 							<span class="catalog__desc">Интернет-магазин
-							вязаных игрушек</span>
-							<a href="#" class="catalog__btn">9 900 руб.</a>
-						</div>
-					</article>
-					<article class="catalog__item">
-						<a href="#" class="catalog__img"><img src="img/img-aplus.jpg" alt="А Плюс" width="360" height="576"></a>
-						<div class="catalog__item-active">
-							<h2 class="catalog__title">A Plus</h2>
-							<span class="catalog__desc">Лендинг курсов повышения
-							квалификации</span>
-							<a href="#" class="catalog__btn">9 900 руб.</a>
-						</div>
-					</article>
-					<article class="catalog__item">
-						<a href="#" class="catalog__img"><img src="img/img-kvast.jpg" alt="Кваст" width="360" height="576"></a>
-						<div class="catalog__item-active">
-							<h2 class="catalog__title">Кваст</h2>
-							<span class="catalog__desc">Промо-сайт производителя крафтового кваса</span>
-							<a href="#" class="catalog__btn">9 900 руб.</a>
-						</div>
-					</article>
-					<div class="pagination">
-						<a class="pagination__item  pagination__item--preview visually-hidden" href="#">Предыдущая</a>
-						<a class="pagination__item pagination__item--current" href="#">1</a>
-						<a class="pagination__item" href="#">2</a>
-						<a class="pagination__item" href="#">3</a>
-						<a class="pagination__item pagination__item--next" href="#">Следующая</a>
-					</div>
-				</section>
-				<div class="modal-write">
-					<form action="#" method="post" class="modal-write__form">
-						<fieldset class="modal-write__name">
-							<legend class="modal-write__title">Напишите нам
-								<button class="modal-write__btn modal-write__btn--close">Закрыть</button>
-							</legend>
-							<label for="name">Ваше имя:<br><input type="text" id="name" name="name" placeholder="Представьтесь, пожалуйста" required>
-							</label>
-						</fieldset>
-						<fieldset class="modal-write__email">
-							<label for="email">Ваш e-mail:<br><input type="email" id="email" name="email" placeholder="Для отправки ответа" required>
-							</label>
-						</fieldset>
-						<fieldset class="modal-write__message">
-							<label for="message">Текст письма:</label>
-							<textarea class="modal-write__textarea" id="message" name="message" placeholder="В свободной форме" required></textarea>
-						</fieldset>
-						<button type="submit" class="modal-write__btn modal-write__btn--submit">Отправить</button>
-					</form>
-				</div>
-			</div>
-			<div class="contacts__contanier">
-				<section class="contacts">
-					<h2 class="visually-hidden">Контакты</h2>
-					<div class="contacts__location">
-						<span class="contacts__title">Nёrds design studio</span>
-						<p>191186, Санкт-Петербург,<br>
-							ул. Б. Конюшенная, д. 19/8
-							<a class="contacts__tel" href="tel:+78122757575">тел. +7 (812) 275-75-75</a>
-						</p>
-						<a class="contacts__btn contacts__btn--red" href="#">Напишите нам</a>
-					</div>
-				</section>
-			</div>
-		</main>
-		<footer class="footer">
-			<div class="footer__contanier">
-				<div class="footer__social">
-					<ul class="footer__social-list">
-						<li class="footer__social-item footer__social-item--vk">
-							<a class="visually-hidden" href="https://vk.com/htmlacademy">Vkontakte</a></li>
-							<li class="footer__social-item footer__social-item--fb"><a class="visually-hidden" href="https://www.facebook.com/htmlacademy">Facebook</a></li>
-							<li class="footer__social-item footer__social-item--in"><a class="visually-hidden" href="https://www.instagram.com/htmlacademy/">Instagram</a></li>
-						</ul>
-						<div class="footer__motion">
-							<p class="footer__text">Давайте дружить, это выгодно!<br>
-								<span class="footer__text footer__text--span">Скидка 10% для друзей из социальных сетей.</span></p>
+								вязаных игрушек</span>
+								<a href="#" class="catalog__btn">9 900 руб.</a>
 							</div>
+						</article>
+						<article class="catalog__item">
+							<a href="#" class="catalog__img"><img src="img/img-aplus.jpg" alt="А Плюс" width="360" height="576"></a>
+							<div class="catalog__item-active">
+								<h2 class="catalog__title">A Plus</h2>
+								<span class="catalog__desc">Лендинг курсов повышения
+									квалификации</span>
+									<a href="#" class="catalog__btn">9 900 руб.</a>
+								</div>
+							</article>
+							<article class="catalog__item">
+								<a href="#" class="catalog__img"><img src="img/img-kvast.jpg" alt="Кваст" width="360" height="576"></a>
+								<div class="catalog__item-active">
+									<h2 class="catalog__title">Кваст</h2>
+									<span class="catalog__desc">Промо-сайт производителя крафтового кваса</span>
+									<a href="#" class="catalog__btn">9 900 руб.</a>
+								</div>
+							</article>
+							<div class="pagination">
+								<a class="pagination__item  pagination__item--preview visually-hidden" href="#">Предыдущая</a>
+								<a class="pagination__item pagination__item--current" href="#">1</a>
+								<a class="pagination__item" href="#">2</a>
+								<a class="pagination__item" href="#">3</a>
+								<a class="pagination__item pagination__item--next" href="#">Следующая</a>
+							</div>
+						</section>
+						<div class="modal-write">
+							<form action="#" method="post" class="modal-write__form">
+								<fieldset class="modal-write__name">
+									<legend class="modal-write__title">Напишите нам
+										<button class="modal-write__btn modal-write__btn--close">Закрыть</button>
+									</legend>
+									<label for="name">Ваше имя:<br><input type="text" id="name" name="name" placeholder="Представьтесь, пожалуйста" required>
+									</label>
+								</fieldset>
+								<fieldset class="modal-write__email">
+									<label for="email">Ваш e-mail:<br><input type="email" id="email" name="email" placeholder="Для отправки ответа" required>
+									</label>
+								</fieldset>
+								<fieldset class="modal-write__message">
+									<label for="message">Текст письма:</label>
+									<textarea class="modal-write__textarea" id="message" name="message" placeholder="В свободной форме" required></textarea>
+								</fieldset>
+								<button type="submit" class="modal-write__btn modal-write__btn--submit">Отправить</button>
+							</form>
 						</div>
 					</div>
-				</footer>
-				<script src="js/script.js"></script>
-			</body>
-		</html>
+					<div class="contacts__contanier">
+						<section class="contacts">
+							<h2 class="visually-hidden">Контакты</h2>
+							<div class="contacts__location">
+								<span class="contacts__title">Nёrds design studio</span>
+								<p>191186, Санкт-Петербург,<br>
+									ул. Б. Конюшенная, д. 19/8
+									<a class="contacts__tel" href="tel:+78122757575">тел. +7 (812) 275-75-75</a>
+								</p>
+								<a class="contacts__btn contacts__btn--red" href="#">Напишите нам</a>
+							</div>
+						</section>
+					</div>
+				</main>
+				<footer class="footer">
+					<div class="footer__contanier">
+						<div class="footer__social">
+							<ul class="footer__social-list">
+								<li class="footer__social-item footer__social-item--vk">
+									<a class="visually-hidden" href="https://vk.com/htmlacademy">Vkontakte</a></li>
+									<li class="footer__social-item footer__social-item--fb"><a class="visually-hidden" href="https://www.facebook.com/htmlacademy">Facebook</a></li>
+									<li class="footer__social-item footer__social-item--in"><a class="visually-hidden" href="https://www.instagram.com/htmlacademy/">Instagram</a></li>
+								</ul>
+								<div class="footer__motion">
+									<p class="footer__text">Давайте дружить, это выгодно!<br>
+										<span class="footer__text footer__text--span">Скидка 10% для друзей из социальных сетей.</span></p>
+									</div>
+								</div>
+							</div>
+						</footer>
+						<script src="js/script.js"></script>
+					</body>
+					</html>
