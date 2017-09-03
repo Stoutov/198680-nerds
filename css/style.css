@@ -717,8 +717,10 @@ background-position: 0 0;
 top: -39px;
 opacity: 0.12;
 }
-.catalog__item:hover {
+.catalog__item:hover::before,
+.catalog__item-active:hover {
 opacity: 1;
+transition-duration: 0.4s;
 }
 .catalog__item-active {
 display: flex;
@@ -733,10 +735,7 @@ left: 0px;
 background-color: #eeeeee;
 text-align: center;
 }
-.catalog__item-active:hover {
-opacity: 1;
-transition-duration: 0.4s;
-}
+
 .catalog__desc {
 color: #666666;
 font-size: 16px;
