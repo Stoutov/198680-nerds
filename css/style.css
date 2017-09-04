@@ -65,19 +65,29 @@ a {
 }
 .nav__list {
 	list-style: none;
-	width: 100%;
+	width: 438px;
 	display: flex;
-	justify-content: flex-end;
-	padding: 10px 18px;
+	/*justify-content: flex-end;*/
+	justify-content: space-around;
+	padding: 27px 18px;
+	margin: 0;
+	margin-left: 167px;
 }
 .nav__item {
-	margin-left: 21px;
-	margin-right: 25px;
+	display: flex;
+/*	margin-left: 21px;
+	margin-right: 25px;*/
 	font-size: 16px;
 	font-weight: 500;
 	line-height: 30px;
 	text-transform: uppercase;
 	color: #000000;
+}
+.nav__item--clients {
+	margin-left: 10px;
+}
+.nav__item--shop {
+	margin-left: 20px;
 }
 .nav__item:hover,
 .nav__item:focus {
@@ -812,12 +822,13 @@ input[type="checkbox"] + label span:hover {
 	flex-wrap: wrap;
 	justify-content: center;
 	align-items: center;
-	position: absolute;
+/*	position: absolute;*/
 	padding: 0 60px;
-	top: 346px;
-	left: 0px;
+/*	top: 346px;
+	left: 0px;*/
 	background-color: #eeeeee;
 	text-align: center;
+	z-index: 1200;
 }
 .catalog__item:hover .catalog__item-active {
 	display: flex;
