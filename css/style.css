@@ -84,16 +84,16 @@ a {
 	color: #000000;
 }
 .nav__item--studio {
-	margin-left: 14px;
+	margin-left: 23px;
 }
 .nav__item--clients {
-	margin-left: 10px;
+	margin-left: 27px;
 }
 .nav__item--shop {
-	margin-left: 12px;
+	margin-left: 30px;
 }
 .nav__item--contacts {
-
+	margin-left: 27px;
 }
 .nav__item:hover,
 .nav__item:focus {
@@ -110,9 +110,11 @@ a {
 	padding-bottom: 5px;
 }
 .nav__cart {
+	width: 348px;
+display: flex;
+justify-content: flex-end;
 	position: relative;
-	padding-left: 240px;
-	padding-top: 29px;
+	padding-top: 28px;
 }
 .nav__cart--link {
 	font-size: 16px;
@@ -134,12 +136,11 @@ a {
 	content: "";
 	position: absolute;
 	top: 33px;
-	left: 200px;
+	left: 237px;
 	width: 16px;
 	height: 18px;
 	background-image: url("../img/cart-icon.svg");
 	background-repeat: no-repeat;
-	background-position: 0 0;
 }
 .slider {
 	position: relative;
