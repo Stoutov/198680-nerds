@@ -604,10 +604,11 @@ a {
 	border: none;
 	border-radius: 5px;
 	background: #f1f1f1;
+	margin-left: 10px;
 }
 .cost__range {
 	display: flex;
-	justify-content: space-between;
+	justify-content: flex-start;
 	width: 260px;
 }
 .cost__range input[type="text"] {
