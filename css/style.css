@@ -192,6 +192,7 @@ a {
 	padding-top: 60px;
 	padding-bottom: 10px;
 }
+
 .slide__btn {
 	font-size: 16px;
 	font-weight: 500;
@@ -224,12 +225,12 @@ a {
 .slide:nth-child(2) {
 	background-image: url("../img/slide2.png");
 	background-repeat: no-repeat;
-	background-position: 100% 10px;
+	background-position: 100% -22px;
 }
 .slide:nth-child(3) {
 	background-image: url("../img/slide3.png");
 	background-repeat: no-repeat;
-	background-position: 100% 0;
+	background-position: 100% -5px;
 }
 #slider__btn1:checked ~ .slides .slide:nth-child(1) {
 	display: flex;
