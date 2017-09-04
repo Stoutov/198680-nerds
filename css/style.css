@@ -16,17 +16,6 @@ a {
 	text-decoration: none;
 	display: flex;
 }
-fieldset {
-	display: flex;
-	border: none;
-	padding: 0;
-	margin: 0;
-	font-size: 16px;
-	line-height: 38px;
-	font-weight: 400;
-	color: #283136;
-}
-
 .header__contanier,
 .main__contanier,
 .slider__contanier,
@@ -452,14 +441,31 @@ fieldset {
 	text-transform: none;
 }
 .filter__radio {
+	display: flex;
+	border: none;
+	padding: 0;
+	margin: 0;
+	font-size: 16px;
+	line-height: 38px;
+	font-weight: 400;
+	color: #283136;
 	width: 200px;
 	margin-bottom: 57px;
 }
 .filter__checkbox {
+	display: flex;
+	border: none;
+	padding: 0;
+	margin: 0;
+	font-size: 16px;
+	line-height: 38px;
+	font-weight: 400;
+	color: #283136;
 	width: 200px;
 	margin-bottom: 50px;
 }
-.wrapper-filter__range {
+.wrapper-filter__range fieldset {
+	border: none;
 	width: 240px;
 	margin-bottom: 62px;
 }
@@ -523,12 +529,6 @@ fieldset {
 	border: none;
 	border-radius: 5px;
 	background: #f1f1f1
-}
-.filter__radio {
-	margin-bottom: 57px;
-}
-.filter__checkbox {
-	margin-bottom: 50px;
 }
 input[type="checkbox"] + label span {
 	display:inline-block;
