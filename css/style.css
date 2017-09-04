@@ -26,9 +26,7 @@ fieldset {
 	font-weight: 400;
 	color: #283136;
 }
-input {
-	cursor: pointer;
-}
+
 .header__contanier,
 .main__contanier,
 .slider__contanier,
@@ -220,6 +218,14 @@ input {
 	height: 50px;
 	background-color: #fb565a;
 	margin-top: 23px;
+}
+.slide__btn:hover {
+	background-color: #e74246;
+}
+.slide__btn:active {
+	box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.1);
+	background-color: #d7373b;
+	color: #e47175;
 }
 .slide:nth-child(1) {
 	background-image: url("../img/slide1.png");
@@ -470,6 +476,7 @@ input {
 .cost__scale {
 	height: 2px;
 	background: #d7dcde;
+	cursor: pointer;
 }
 .scale__slider {
 	width: 152px;
@@ -773,6 +780,9 @@ input[type="checkbox"] + label span:hover {
 	font-weight: 700;
 	line-height: 30px;
 	margin-bottom: 25px;
+}
+.catalog__link {
+	color: #000000;
 }
 .catalog__item {
 	width: 360px;
