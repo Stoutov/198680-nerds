@@ -232,13 +232,13 @@ a {
 	background-position: 100% 0;
 }
 #slider__btn1:checked ~ .slides .slide:nth-child(1) {
-	display: block;
+	display: flex;
 }
 #slider__btn2:checked ~ .slides .slide:nth-child(2) {
-	display: block;
+	display: flex;
 }
 #slider__btn3:checked ~ .slides .slide:nth-child(3) {
-	display: block;
+	display: flex;
 }
 .service {
 	width: 1100px;
