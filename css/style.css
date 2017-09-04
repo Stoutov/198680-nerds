@@ -1042,6 +1042,10 @@ input[type="checkbox"] + label span:hover {
 	background-color: #ffffff;
 	box-shadow: 0 20px 40px rgba(0, 1, 1, 0.75);
 	text-transform: none;
+	border: none;
+}
+.modal-write fieldset {
+	border: none;
 }
 .modal-write--show {
 	display: flex;
