@@ -176,7 +176,9 @@ justify-content: flex-end;
 #slider__btn1:checked ~ .slider__control label[for="slider__btn1"],
 #slider__btn2:checked ~ .slider__control label[for="slider__btn2"],
 #slider__btn3:checked ~ .slider__control label[for="slider__btn3"] {
-	background: #c1c1c1;
+	/*background-color: #c1c1c1;*/
+	background-color:  transparent;
+	border: 6px solid #c1c1c1;
 }
 .slide {
 	position: absolute;
