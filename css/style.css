@@ -1,3 +1,9 @@
+body, html {
+    -webkit-text-size-adjust: none;
+    -moz-text-size-adjust: none;
+    -ms-text-size-adjust: none;
+    text-size-adjust: none;
+}
 body {
 	width: 1440px;
 	margin: 0 auto;
@@ -535,6 +541,7 @@ justify-content: flex-end;
 	font-weight: 500;
 	line-height: 55px;
 }
+
 .filter {
 	width: 260px;
 	font-size: 16px;
@@ -644,6 +651,7 @@ justify-content: flex-end;
 }
 .filter__radio {
 	display: flex;
+	flex-wrap: wrap;
 	border: none;
 	padding: 0;
 	margin: 0;
@@ -656,6 +664,8 @@ justify-content: flex-end;
 }
 .filter__checkbox {
 	display: flex;
+	flex-wrap: wrap;
+
 	border: none;
 	padding: 0;
 	margin: 0;
