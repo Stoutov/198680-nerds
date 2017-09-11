@@ -182,8 +182,7 @@ justify-content: flex-end;
 #slider__btn1:checked ~ .slider__control label[for="slider__btn1"],
 #slider__btn2:checked ~ .slider__control label[for="slider__btn2"],
 #slider__btn3:checked ~ .slider__control label[for="slider__btn3"] {
-	/*background-color: #c1c1c1;*/
-	background-color:  transparent;
+	background-color:  #ffffff;
 	border: 6px solid #c1c1c1;
 }
 .slide {
@@ -844,7 +843,7 @@ input[type="checkbox"] + label span:hover {
 	align-items: center;
 	position: absolute;
 	padding: 0 60px;
-	top: 346px;
+	top: 354px;
 	left: 0px;
 	background-color: #eeeeee;
 	text-align: center;
@@ -1093,6 +1092,7 @@ input[type="checkbox"] + label span:hover {
 	box-shadow: 0 20px 40px rgba(0, 1, 1, 0.75);
 	text-transform: none;
 	border: none;
+	z-index: 110;
 }
 .modal-write fieldset {
 	border: none;
@@ -1122,7 +1122,7 @@ input[type="checkbox"] + label span:hover {
 	font-size: 16px;
 	font-weight: 400;
 	box-sizing: border-box;
-	width: 360px;
+	width: ;
 	padding-top: 18px;
 	padding-bottom: 16px;
 	padding-left: 16px;
