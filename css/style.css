@@ -659,7 +659,7 @@ justify-content: flex-end;
 	line-height: 40px;
 	font-weight: 400;
 	color: #283136;
-	width: 200px;
+	/*width: 260px;*/
 	margin-bottom: 33px;
 }
 .filter__checkbox {
@@ -672,13 +672,14 @@ justify-content: flex-end;
 	line-height: 40px;
 	font-weight: 400;
 	color: #283136;
-	width: 200px;
+	/*width: 260px;*/
 	margin-bottom: 36px;
 }
 .filter__radio label,
 .filter__checkbox label {
 	width: 100%;
 }
+
 input[type="checkbox"] + label span {
 	display: inline-block;
 	width: 25px;
@@ -793,6 +794,9 @@ input[type="checkbox"] + label span:hover {
 .sort__direction--up:active,
 .sort__direction--down:active {
 	outline: none;
+	opacity: 1;
+}
+.sort__direction--active {
 	opacity: 1;
 }
 .catalog {
